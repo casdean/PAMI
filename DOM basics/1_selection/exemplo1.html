@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- faça uma estrutura em bloco, utilizando as funções (é mais organizado e profissional) -->
+
+    <!-- onclick é um EVENTO que funciona quando clicado -->
+    <button onclick="dizerOla()">Diga Olá!</button>
+    <button onclick="aplicarEstilo()">Aplicar estilo</button> 
+    <button onclick="aumentarFonte()">Aumentar fonte</button>
+    <button onclick="reduzirFonte()">Reduzir fonte</button>
+    <button onclick="aplicarPurple()">Aplicar Roxo</button>
+    <button onclick="aplicarRed()">Aplicar Vermelho</button>
+    <button onclick="aplicarBlue()">Aplicar Azul</button>
+    <button onclick="aumentarMarg()">Aumentar Margem</button>
+    <button onclick="reduzirMarg()">Reduzir Margem</button>
+
+    
+    <h1>Etec Sales Gomes</h1>
+
+    <script>
+        let titulo = document.querySelector('h1'); //procura no documento html a tag especificada
+        let font_size = 12;
+        let margin_size = 10;
+
+        function aplicarPurple(){
+            titulo.style.color = "purple";
+        }
+        function aplicarRed(){
+            titulo.style.color = "red";
+        }
+        function aplicarBlue(){
+            titulo.style.color = "blue";
+        }
+
+        function aumentarFonte(){
+            font_size = font_size + 5;
+           aplicarSize();
+        }
+        function reduzirFonte(){
+            font_size = font_size - 5;
+            aplicarSize();
+        }
+        function aplicarSize(){
+            titulo.style.fontSize = `${font_size}px`;
+        }
+
+
+        function aumentarMarg(){
+            margin_size = margin_size + 5;
+            aplicarMargin()
+        }
+        function reduzirMarg(){
+            margin_size = margin_size - 5;
+            aplicarMargin()
+        }
+        function aplicarMargin(){
+            titulo.style.margin = margin_size + 'px';
+        }
+        
+        
+        function dizerOla(){
+            alert ('Olá!!');
+        }
+
+
+        function aplicarEstilo(){
+            titulo.style.backgroundColor = 'white';
+            titulo.style.fontFamily = 'Comic Sans MS';
+            titulo.style.marginTop = '100px';
+            titulo.style.fontSize = '64px'; 
+        }
+        
+        console.log(titulo);
+        document.body.style.backgroundColor = "darkmagenta";
+    
+    </script>
+
+</body>
+</html>
