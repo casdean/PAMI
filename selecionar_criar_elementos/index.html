@@ -1,0 +1,96 @@
+<button onclick="addVeiculo1()">Adicionar Fusca</button>
+    <button onclick="addVeiculo2()">Adicionar Avião</button>
+    <button onclick="addVeiculo3()">Adicionar BMW</button>
+    <button onclick="addVeiculo4()">Adicionar Ferrari</button>
+    <div id="estacionamento"></div>
+
+    <script>
+    function addVeiculo1() {
+        let veiculo_1 = document.createElement('h1'); 
+        veiculo_1.innerText = 'Fusca'; 
+        veiculo_1.style.color = 'pink'; 
+          veiculo_1.style.backgroundColor = 'black'; 
+        veiculo_1.style.fontSize = '28px'; // Tamanho da fonte
+        veiculo_1.style.fontFamily = 'Impact'; // Tipo da fonte
+
+        let imagem = document.createElement('img'); 
+        imagem.setAttribute('src', 'https://th.bing.com/th?id=OIP.KIk4JJS0UWYn3vhgk6yQtgHaEK&w=333&h=187&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2'); // Fonte da imagem (ajuste o caminho do arquivo)
+        imagem.style.width = '100px'; // Largura da imagem
+        imagem.style.height = 'auto'; // Altura automática
+
+       
+        document.querySelector('#estacionamento').appendChild(veiculo_1);
+        document.querySelector('#estacionamento').appendChild(imagem);
+    }
+
+    function addVeiculo2() {
+        let veiculo_2 = document.createElement('h1');
+        veiculo_2.innerText = 'Avião';
+        veiculo_2.style.color = 'blue';
+        veiculo_2.style.backgroundColor = 'lightgrey';
+        veiculo_2.style.fontSize = '28px';
+        veiculo_2.style.fontFamily = 'Marck Script';
+
+        let imagem = document.createElement('img');
+        imagem.setAttribute('src', 'https:cdn.panrotas.com.br/portal-panrotas-statics/media-files-cache/334042/e66c929a0d582bcde0c05fcc44d3742014aviaodeafrotamaismagicadomundo/77,0,2412,1440/1206,720,0.28/0/default.jpg');
+        imagem.style.width = '100px';
+        imagem.style.height = 'auto';
+
+        document.querySelector('#estacionamento').appendChild(veiculo_2);
+        document.querySelector('#estacionamento').appendChild(imagem);
+    }
+
+    function addVeiculo3() {
+        let veiculo_3 = document.createElement('h1');
+        veiculo_3.innerText = 'BMW';
+        veiculo_3.style.color = 'white';
+        veiculo_3.style.backgroundColor = 'blue';
+        veiculo_3.style.fontSize = '28px';
+        veiculo_3.style.fontFamily = 'Verdana';
+
+        let imagem = document.createElement('img');
+        imagem.setAttribute('src', 'https://image1.mobiauto.com.br/images/api/images/v1.0/277883640/transform/fl_progressive,f_webp,q_auto');
+        imagem.style.width = '100px';
+        imagem.style.height = 'auto';
+
+        document.querySelector('#estacionamento').appendChild(veiculo_3);
+        document.querySelector('#estacionamento').appendChild(imagem);
+    }
+
+    function addVeiculo4() {
+        let veiculo_4 = document.createElement('h1');
+        veiculo_4.innerText = 'Ferrari';
+        veiculo_4.style.color = 'red';
+        veiculo_4.style.backgroundColor = 'black';
+        veiculo_4.style.fontSize = '28px';
+        veiculo_4.style.fontFamily = 'Georgia';
+
+        let imagem = document.createElement('img');
+        imagem.setAttribute('src', 'https://cdn.motor1.com/images/mgl/XBGJbe/s3/ferrari-sp-8.jpg');
+        imagem.style.width = '100px';
+        imagem.style.height = 'auto';
+
+        document.querySelector('#estacionamento').appendChild(veiculo_4);
+        document.querySelector('#estacionamento').appendChild(imagem);
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>

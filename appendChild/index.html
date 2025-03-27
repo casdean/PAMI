@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quarto dos horrores</title>
+</head>
+<body>
+
+    <img src="./ligado.png" id="interruptor" onclick="acionarInterruptor()">
+    <img src="./lampada_ligada.png" id="lampada" >
+
+    <script>    
+        
+        let acionado = true;
+        
+
+        function acionarInterruptor (){
+            let body = document.querySelector('body');
+            let interruptor = document.querySelector('#interruptor'); //#cerquilha
+            let lampada = document.querySelector('#lampada');
+
+            if (acionado == true) {
+                interruptor.setAttribute('src', './desligado.png');
+                lampada.setAttribute('src', './lampada_desligada.png');
+                body.style.backgroundColor = 'black';  
+
+            } else {
+                interruptor.setAttribute('src', './ligado.png');
+                lampada.setAttribute('src', './lampada_ligada.png');
+                body.style.backgroundColor = 'white';
+                
+            }
+            acionado = !acionado;
+        }
+
+    </script>
+    
+    
+
+
+</body>
+</html>
