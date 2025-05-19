@@ -1,0 +1,34 @@
+<script>
+
+    //existe também os cookies que são temporários 
+
+    let acessToken = {
+        email: 'horse@gmail.com',
+        token: '123123123'
+    }
+
+    localStorage.setItem('token', JSON.stringify(acessToken)); //memória fica armazenada no dispositivo
+
+    // json.stringify para converter para json e conseguir pegar os valores dentro do array
+    //json.parse para converter para script
+
+    let pessoa = {
+            nome: 'Severino',
+            sobrenome: 'Silva',
+            idade: 10,
+            altura: '1,5cm',
+            peso: '70kg',
+            telefones: [
+                999998989,
+                435643635,
+                857094332
+            ]
+        }
+
+    localStorage.setItem('pessoa', JSON.stringify(pessoa));
+    localStorage.removeItem('token');
+
+
+    let aluno = JSON.parse(localStorage.getItem('pessoa'));
+    console.log(aluno);
+</script>
