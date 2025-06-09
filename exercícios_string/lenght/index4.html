@@ -1,13 +1,22 @@
 <script>
     let numero = 1599655555;
     
-    numero = numero.split("");
+    numero = numero.split("1599655555");
     
     numero[0]; // 1
     numero[1]; // 5
     
-    
+    numero.forEach(function(exceções){
+        if (numero.lenght < 10) {
+            console.log("faltam números no seu telefone");
+        } 
+        else if(numero == Number) {
+            console.log("tudo certo!");
+        } else{
+            console.log("veja se tem algum carácter especial no seu telefone.")
+        }
+    });
 
-
+console.log(exceções);
 </script>
 
