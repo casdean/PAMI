@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    
+    let segundos = 0;
+    let minutos = 0;
+    let horas = 0;
+
+    let timer = document.createElement('h1');
+    timer.style.fontSize = '100px';
+    timer.style.fontFamily = 'Dancing Script'
+    
+    setInterval(() => {
+        segundos++;
+        if (segundos % 2 == 0) {
+            document.querySelector('body').style.backgroundColor = 'blue';
+            console.log(segundos + ' é par')
+        }
+        else{
+            document.querySelector('body').style.backgroundColor = 'green';
+            console.log(segundos + ' é impar')
+        }
+        if(segundos > 59 ){
+            minutos++;
+            segundos = 0;
+        
+        }
+         if (minutos > 59) {
+            horas++;
+            minutos = 0;
+         }
+
+        timer.innerText = horas + ':' + minutos + ':'  + segundos + ':' ;
+
+    }, 1000);
+    document.querySelector('body').appendChild(timer);
+    
+
+
+
+
+</script>

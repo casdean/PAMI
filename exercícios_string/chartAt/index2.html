@@ -1,0 +1,17 @@
+<script>
+    function contarOcorrencias(texto, caractere) {
+    let contador = 0;
+    
+        for (let i = 0; i < texto.length; i++) {
+            if (texto.charAt(i) === caractere){
+                contador++;
+            }
+        }
+    
+        console.log(`O caractere '${caractere}' aparece ${contador} vezes.`);
+    }
+    
+
+    contarOcorrencias('Banana', 'a');
+    </script>
+    

@@ -1,0 +1,16 @@
+<script>
+    let alunos = [
+        "Pombinha da Silva",
+        "Barraqueira da Silva",
+        "Discórdia da Silva"
+    ];
+
+    
+    let paz = alunos.map(function(nome) {
+        return nome.replaceAll("Silva", "Paz");
+    });
+
+    paz.forEach(function(nome) {
+        console.log(nome);
+    });
+</script>
