@@ -1,0 +1,84 @@
+<script>
+
+const veiculos = [
+ {
+    nome: "Toyota Corolla",
+    ano: 2020,
+    preco: 85000,
+    modelo: "XEi",
+    tipoCombustivel: "Gasolina"
+  },
+  {
+    nome: "Honda Civic",
+    ano: 2021,
+    preco: 92000,
+    modelo: "Touring",
+    tipoCombustivel: "Flex"
+  },
+  {
+    nome: "Volkswagen Golf",
+    ano: 2019,
+    preco: 78000,
+    modelo: "GTI",
+    tipoCombustivel: "Gasolina"
+  },
+  {
+    nome: "Chevrolet Onix",
+    ano: 2022,
+    preco: 72000,
+    modelo: "LTZ",
+    tipoCombustivel: "Flex"
+  },
+  {
+    nome: "Fiat Argo",
+    ano: 2023,
+    preco: 65000,
+    modelo: "Trekking",
+    tipoCombustivel: "Flex"
+  },
+  {
+    nome: "Hyundai HB20",
+    ano: 2021,
+    preco: 70000,
+    modelo: "Diamond",
+    tipoCombustivel: "Gasolina"
+  },
+  {
+    nome: "Renault Kwid",
+    ano: 2020,
+    preco: 49000,
+    modelo: "Zen",
+    tipoCombustivel: "Flex"
+  },
+  {
+    nome: "Ford Ranger",
+    ano: 2022,
+    preco: 180000,
+    modelo: "XLS",
+    tipoCombustivel: "Diesel"
+  },
+  {
+    nome: "Jeep Renegade",
+    ano: 2023,
+    preco: 120000,
+    modelo: "Longitude",
+    tipoCombustivel: "Flex"
+  },
+  {
+    nome: "Tesla Model 3",
+    ano: 2023,
+    preco: 250000,
+    modelo: "Standard Plus",
+    tipoCombustivel: "Elétrico"
+  }
+];
+
+let veiculos_seminovos = veiculos.filter(veiculo => veiculo.ano < 2023);
+let veiculos_novos = veiculos.filter(veiculo => veiculo.ano >= 2023);
+let veiculos_gasolina = veiculos.filter(veiculo => veiculo.tipoCombustivel == "Gasolina");
+let veiculos_baixo_valor = veiculos.filter(veiculo => veiculo.preco < 50000 );
+
+console.log(veiculos_baixo_valor);
+
+
+</script>
